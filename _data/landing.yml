@@ -1,0 +1,43 @@
+# index page sections
+# custom following lines to edit your index page
+- id: home
+  name: HOME
+  footer_name: Home
+  tpl: home.html
+  css:
+
+- id: about
+  name: ABOUT
+  footer_name: About
+  tpl: about.html
+  css:
+
+- id: products
+  name: PRODUCTS
+  footer_name: Products
+  tpl: products.html
+  css:
+
+- id: news
+  name: NEWS
+  footer_name: News
+  tpl: news.html
+  css:
+
+- id: careers
+  name: CAREERS
+  footer_name: Careers
+  tpl: careers.html
+  css:
+
+- id: contact
+  name: CONTACT
+  footer_name: Contact
+  tpl: contact.html
+  css:
+
+- id: resources
+  name: RESOURCES
+  footer_name: resources
+  tpl: resources.html
+  css:

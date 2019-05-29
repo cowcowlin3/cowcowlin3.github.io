@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-left">
+      <h1><span class="title-section">{{section.name}}</span></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div id="news_slick" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}' class="row">
+	{% assign varCount = 1 %}
+	{% for article in site.news reversed %}
+      <div class="col-xs-4">
+          <div class="col-xs-12">
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.date | date: "%b %-d %Y" }}</p>
+          </div>
+          <div class="col-xs-12">
+              {% if article.link %}
+                <a href="{{ article.link}}" target="_blank"><img src="{{ article.picture | prepend: site.baseurl }}" class="img-responsive" alt=""></a>
+              {% else %}
+                <img src="{{ article.picture | prepend: site.baseurl }}" class="img-responsive" alt="">
+              {% endif %}
+          </div>
+          <div class="col-xs-12">
+            {{ article.content | truncate: 150}}
+            <div class="text-right">
+            	<a href="javascript:funOpenNews('fbx{{ varCount }}');">more...</a>
+           	</div>
+          </div>
+      </div>
+
+      {% assign varCount = varCount | plus:1 %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+	
+ 	{% assign varCount = 1 %}
+	{% for article in site.news reversed %}
+	<div id="fbx{{ varCount }}" class="animated-modal" style="display:none;">
+	  <div>
+	      <div>
+	        <h3>{{ article.title }}</h3>
+	        <p>{{ article.date | date: "%b %-d %Y" }}</p>
+	      </div>
+	      <div>
+	          {% if article.link %}
+	            <a href="{{ article.link}}" target="_blank"><img src="{{ article.picture | prepend: site.baseurl }}" class="img-responsive" alt=""></a>
+	          {% else %}
+	            <img src="{{ article.picture | prepend: site.baseurl }}" class="img-responsive" alt="">
+	          {% endif %}
+	      </div>
+	      <div>
+	        {{ article.content}}
+	      </div>
+	  </div>
+	</div>      
+      {% assign varCount = varCount | plus:1 %}
+      {% endfor %}

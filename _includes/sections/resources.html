@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-left">
+      <h1><span class="title-section">{{section.name}}</span></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-left">
+      <h3>Company Profile</h3>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-1 col-xs-2">
+        <img src="{{ "/static/assets/img/profile.jpg" | prepend: site.baseurl }}" class="pull-left img-responsive">
+      </div>
+      <div class="col-lg-6 col-xs-12">
+        <p>To get a copy of our company profile,<br/>
+        please send your inquires to the following email address:<br/>
+        <A Href="mailto:peiti.chia@shirre.com?Subject=[Company Profile Inquiries]">peiti.chia@shirre.com</A></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

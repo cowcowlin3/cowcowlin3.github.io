@@ -1,0 +1,237 @@
+$dark-color:#5e6a71;
+$light-color:#e8ebe9;
+$white-color:#ffffff;
+$logo-color:#ec047c;
+
+body {
+  text-align: left;
+  font-family: "ITC Lubalin Graph Extra Light";
+  font-size: calc(12px + 0.4vw);
+  //font-size: 18px;
+  line-height: calc(1.1em + 0.5vw);
+  img {
+    margin: auto;
+  }
+  background-color: $white-color;
+  border-color: $white-color;
+  color: $dark-color;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "ITC Lubalin Graph Demi";
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 0.8em;
+  }
+  h6 {
+    font-size: 0.7em;
+  }
+}
+
+.navbar-nav > li > a {
+  background-color: $white-color;
+  border-color: $white-color;
+  border-top: 6px solid transparent;
+}
+
+.navbar-default .navbar-nav {
+  .active > a
+  {
+      background-color: $white-color;
+      &:hover {
+        background-color: $white-color;
+      }
+      &:focus {
+        background-color: $white-color;
+      }
+  }
+}
+
+.navbar-default {
+  background-color: $white-color;
+  border-color: $white-color;
+    .active > a {
+      border-top: 6px solid $logo-color;
+      &:hover {
+        border-top: 6px solid $logo-color;
+      }
+    }
+}
+
+.page {
+  margin-top: 0px;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100%;
+  /* min-height: 100vh;*/
+}
+
+.footer {
+  background-color: $dark-color;
+}
+
+#footer {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: $white-color;
+  a {
+    color: $white-color;
+  }
+}
+
+.logo-container {
+  background-image: url(../assets/img/Shirre_logo.svg);
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  margin-left: 0;
+  height: 10vh;
+  min-height: 100px;
+  min-width: 250px;
+  width: 40%;
+  background-size: 100% auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.carousel .item {
+   height: 70vh;
+   width: 100%;
+   @media screen and (orientation: portrait) {
+     height: 80vh;
+   }
+   @media screen and (orientation: portrait) and (max-height: 640px) {
+     height: 70vh;
+   }
+ }
+
+ .carousel-fade .carousel-inner .item {
+ 	transition-property: opacity;
+ }
+ .carousel-fade .carousel-inner .item,
+ .carousel-fade .carousel-inner .active.left,
+ .carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+ }
+ .carousel-fade .carousel-inner .active,
+ .carousel-fade .carousel-inner .next.left,
+ .carousel-fade .carousel-inner .prev.right {
+     opacity: 1;
+ }
+ .carousel-fade .carousel-inner .next,
+ .carousel-fade .carousel-inner .prev,
+ .carousel-fade .carousel-inner .active.left,
+ .carousel-fade .carousel-inner .active.right {
+     left: 0;
+     transform: translate3d(0, 0, 0);
+ }
+ .carousel-fade .carousel-control {
+     z-index: 2;
+ }
+.over_button {
+  float: right;
+  color:black;
+  font-weight:bold;
+  font-size:0.8em;
+  top: 0px;
+  left: 0px;
+}
+
+.header-back {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  &.one {
+    background-color: $white-color;
+    background-image: url(../assets/img/main_1b.jpg);
+    @media screen and (orientation: portrait) {
+      background-image: url(../assets/img/vertical_main_1b.jpg);
+    }
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+  }
+  &.two {
+    background-color: $white-color;
+    background-image: url(../assets/img/main_2b.jpg);
+    @media screen and (orientation: portrait) {
+      background-image: url(../assets/img/vertical_main_2b.jpg);
+    }
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+  }
+  &.three {
+    background-color: $white-color;
+    background-image: url(../assets/img/main_3b.jpg);
+    @media screen and (orientation: portrait) {
+      background-image: url(../assets/img/vertical_main_3b.jpg);
+    }
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+  }
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.carousel-control {
+  &.left, &.right {
+    background: 0 0;
+  }
+  width: 6%;
+}
+
+// News 的左右小箭頭
+.slick-next:before, .slick-prev:before {
+  color: $dark-color !important;
+}
+.slick-slide:focus { outline: none; }
+
+.title-nav {
+  font-family: "ITC Lubalin Graph Demi";
+}
+
+.title-section {
+}
+
+.product_title {
+}
+
+.img-responsive {
+  max-width: 80%;
+  margin-bottom: 2vh;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.social-media-list > ul {
+  float:left;
+  list-style:none;
+  padding-inline-start: 10px;
+}
+
+.social-media-list > li {
+  float:left;
+  list-style:none;
+  padding-inline-start: 10px; 
+}

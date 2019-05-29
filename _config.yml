@@ -1,0 +1,30 @@
+# Website settings
+title: Shirre Lab Corp.
+description: Shirre
+keywords: Shirre,Shirre Company
+baseurl:   # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+#url: https://jarrekk.github.io/Jalpc  # url should be 'http://<github_username>.github.io/homepage' as before
+url: http://127.0.0.1:4000
+
+twitter_username: ShirreLabCorp
+linkedin_username: shirre-lab-corp
+
+collections:
+  products:
+    permalink: /products/:products/
+  news:
+    permalink: /news/:news/
+
+# scss
+sass:
+  style: compressed
+
+# Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
