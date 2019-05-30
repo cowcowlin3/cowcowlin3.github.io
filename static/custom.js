@@ -40,13 +40,13 @@ $(document).ready(function() {
 
 function funOpenNews(sDivId) {
 	$.fancybox.open({
-	    src: "#" + sDivId,
-		closeClick: false,
-		closeBtn: false,
+    src: "#" + sDivId,
+    smallBtn : false,
+    toolbar  : true,
 		width:  1024,
-		height: 800,
+		height: 1024,
 		autoSize: false,
-		fitToView : false,
+		fitToView : true,
 		padding: 20,
 		margin: 30
 	});	 
