@@ -236,17 +236,38 @@ body {
   padding-inline-start: 10px; 
 }
 
-@media (min-width:768px) {
+@media screen and  (min-width:768px) {
   .top-social-media-list {
     display:none;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and  (min-width:322px) and (max-width: 767px) {
   .top-social-media-list {
     float:right;
     right:20px;
     top:80px;
+    position: absolute;
+  }
+
+  .top-social-media-list > ul {
+    float:right;
+    list-style:none;
+    padding-inline-start: 10px;
+  }
+
+  .top-social-media-list > li {
+    float:right;
+    list-style:none;
+    padding-inline-start: 10px; 
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .top-social-media-list {
+    float:right;
+    right:20px;
+    top:105px;
     position: absolute;
   }
 
