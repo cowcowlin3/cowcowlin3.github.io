@@ -22,7 +22,7 @@
           {% endif %}
         </div>
         <div class="col-xs-12">
-          {{ article.content | truncate: 150}}
+          {{ article.content | strip_html | truncate: 150}}
           <div class="text-right">
             <a href="javascript:funOpenNews('fbx{{ varCount }}');">more...</a>
           </div>
