@@ -151,8 +151,8 @@ body {
 }
 
 .header-back {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   max-width: 100%;
   &.one {
     background-color: $white-color;
