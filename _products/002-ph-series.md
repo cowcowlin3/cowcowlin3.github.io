@@ -1,6 +1,6 @@
 ---
-title:  "PH SERIES"
-#picture: /static/assets/img/products/pt-series.jpg
+title:  "PT L-TYPE"
+picture: /static/assets/img/products/pt-series.jpg
 ---
 
 Shirre’s PH series provides solutions for tomorrow’s mmWave array antenna demands.

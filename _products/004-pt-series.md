@@ -1,5 +1,5 @@
 ---
-title:  "PT H-TYPE"
+title:  "PT U-TYPE"
 picture: /static/assets/img/products/pt-series.jpg
 ---
 

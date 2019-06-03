@@ -1,99 +1,95 @@
 <div class="hidden-xs footer" id="footer">
   <div class="container footer">
     <div class="row">
-        <div class="col-xs-6">
-            <div class="footer">
-                <p><span class="navy bold">Shirre Lab Corp.</span> is a materials technology company specializing in fluoro-based dielectric materials such as FCCL and is one of only a handful of teams worldwide to possess the combination of skills required to succeed in bringing these products to market.</p>
-            </div>
+      <div class="col-xs-6">
+        <div class="footer">
+          <p><span class="navy bold">Shirre Lab Corp.</span> is a materials technology company specializing in
+            fluoro-based dielectric materials such as FCCL and is one of only a handful of teams worldwide to possess
+            the combination of skills required to succeed in bringing these products to market.</p>
         </div>
-        <div class="col-xs-2 col-xs-offset-1">
-            <div class="footer">
-                <div><span class="bold">LINKS</span></div>
-                {% for section in site.data.landing %}
-            		{% if section.page %}
-              			<a class="page-scroll" href="{{ section.page}} ">
-            		{% else %}
-              			<a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
-            		{% endif %}
-              			<div>{{ section.footer_name }}</div>
-            			</a>
-          		{% endfor %}
-            </div>
+      </div>
+      <div class="col-xs-2 col-xs-offset-1">
+        <div class="footer">
+          <div><span class="bold">LINKS</span></div>
+          {% for section in site.data.landing %}
+          {% if section.page %}
+          <a class="page-scroll" href="{{ section.page}} ">
+            {% else %}
+            <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+              {% endif %}
+              <div>{{ section.footer_name }}</div>
+            </a>
+            {% endfor %}
         </div>
-        <div class="col-xs-3">
-            <div class="footer">
-                <div><span class="bold">CONTACT</span></div>
-                <div><A Href="mailto:peiti.chia@shirre.com?Subject=[Sales Inquiries]">Sales Inquiries</A></div>
-                <div><A Href="mailto:peiti.chia@shirre.com?Subject=[General Inquiries]">General Inquiries</A></div>
-            </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="footer">
+          <div><span class="bold">CONTACT</span></div>
+          <div><A Href="mailto:peiti.chia@shirre.com?Subject=[Sales Inquiries]">Sales Inquiries</A></div>
+          <div><A Href="mailto:peiti.chia@shirre.com?Subject=[General Inquiries]">General Inquiries</A></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="footer">
-                <div>
-                <ul class="social-media-list">
-                    <li>
-                      <a href="https://www.linkedin.com/company/shirre-lab-corp/" target="_blank">
-                        <svg class="svg-icon" style="fill:#4dc5de;display:block">
-                          <use xlink:href="/static/assets/img/icons.svg#linkedin">
-                          </use>
-                        </svg>
-                        <span class="username"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/ShirreLabCorp" target="_blank">
-                        <svg class="svg-icon" style="fill:#4dc5de;display:block">
-                          <use xlink:href="/static/assets/img/icons.svg#twitter">
-                          </use>
-                        </svg>
-                        <span class="username"></span>
-                      </a>
-                    </li>
-            </ul>
-          </div>
-          <br/>
-          <div class="col-xs-12">
-              <span>© Shirre Lab Corp. 2019 - All Rights Reserved</span></div>
-            </div>
-        </div>
+      </div>
+      <div class="col-xs-12">
+        <ul class="social-media-list-footer">
+          <li>
+            <a href="https://www.linkedin.com/company/shirre-lab-corp/" target="_blank">
+              <svg class="svg-icon" style="fill:#4dc5de;display:block">
+                <use xlink:href="/static/assets/img/icons.svg#linkedin">
+                </use>
+              </svg>
+              <span class="username"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/ShirreLabCorp" target="_blank">
+              <svg class="svg-icon" style="fill:#4dc5de;display:block">
+                <use xlink:href="/static/assets/img/icons.svg#twitter">
+                </use>
+              </svg>
+              <span class="username"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12">
+        <span>© Shirre Lab Corp. 2019 - All Rights Reserved</span>
+      </div>
     </div>
   </div>
 </div>
 <div class="visible-xs">
   <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <div>
-                <ul class="social-media-list">
-                    <li>
-                      <a href="https://www.linkedin.com/company/shirre-lab-corp/" target="_blank">
-                        <svg class="svg-icon" style="fill:#4dc5de;display:block">
-                          <use xlink:href="/static/assets/img/icons.svg#linkedin">
-                          </use>
-                        </svg>
-                        <span class="username"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/ShirreLabCorp" target="_blank">
-                        <svg class="svg-icon" style="fill:#4dc5de;display:block">
-                          <use xlink:href="/static/assets/img/icons.svg#twitter">
-                          </use>
-                        </svg>
-                        <span class="username"></span>
-                      </a>
-                    </li>
-            </ul>
-          </div>
-        </div>
- 
       <div class="col-xs-12">
-            <div>
-              <span>© Shirre Lab Corp. 2019 - All Rights Reserved</span>
-            </div>
+        <div>
+          <ul class="social-media-list-footer">
+            <li>
+              <a href="https://www.linkedin.com/company/shirre-lab-corp/" target="_blank">
+                <svg class="svg-icon" style="fill:#4dc5de;display:block">
+                  <use xlink:href="/static/assets/img/icons.svg#linkedin">
+                  </use>
+                </svg>
+                <span class="username"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/ShirreLabCorp" target="_blank">
+                <svg class="svg-icon" style="fill:#4dc5de;display:block">
+                  <use xlink:href="/static/assets/img/icons.svg#twitter">
+                  </use>
+                </svg>
+                <span class="username"></span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div>
+          <span>© Shirre Lab Corp. 2019 - All Rights Reserved</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
