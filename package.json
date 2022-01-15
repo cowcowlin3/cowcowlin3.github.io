@@ -34,7 +34,7 @@
   "devDependencies": {
     "atob": ">=2.1.0",
     "clean-css": "^4.2.1",
-    "shelljs": "^0.7.6",
+    "shelljs": "^0.8.5",
     "uglify-js": "^2.7.5"
   }
 }
